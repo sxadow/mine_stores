@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5449436185")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5476175023:AAG5OPATwwkXVWv1okCVQsko1EZ8wrDvaFw")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "5166878"))
@@ -12,13 +12,13 @@ APP_ID = int(os.environ.get("APP_ID", "5166878"))
 API_HASH = os.environ.get("API_HASH", "fdafb41f9a67f40e34a6c67f47730a92")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001791052621"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001692959517"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "762308466"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://postgres:DKB3seBcA9fIE4h1@db.mepdgghueizxjzphpoxo.supabase.co:6543/postgres")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://postgres:Cu3JU3uXgwRAj61H@db.vcpdrzhrdkniwupezstl.supabase.co:6543/postgres")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001731872097"))
@@ -37,11 +37,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}
-
-<b>You need to join @TVHD10 to use me
-
-Kindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}<b>You need to join @TVHD10 to use me Kindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
